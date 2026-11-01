@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B70C9322-104F-4C03-8F03-077E9B3AC4BC}</ProjectGuid>
+    <RootNamespace>LibCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\Out\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Temp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\Out\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Temp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>Include;$(QTDIR64)\include;$(ARCHESLIBDIR)\LibPlatform\LibGL\$(Platform)\Include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4458;4127</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions> /Zc:__cplusplus /w44254 /w44307 /permissive- %(AdditionalOptions)</AdditionalOptions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>core-qt.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>core-qt.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>Include;$(QTDIR64)\include;$(ARCHESLIBDIR)\LibPlatform\LibGL\$(Platform)\Include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalOptions>/DQT_NO_DEBUG /Zc:__cplusplus /permissive- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>core-qt.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>core-qt.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\analyticscalarfield2.cpp" />
+    <ClCompile Include="Source\array2.cpp" />
+    <ClCompile Include="Source\box.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Speed</FavorSizeOrSpeed>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NoListing</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NoListing</AssemblerOutput>
+    </ClCompile>
+    <ClCompile Include="Source\box2.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ClCompile Include="Source\camera.cpp" />
+    <ClCompile Include="Source\circle2.cpp" />
+    <ClCompile Include="Source\color.cpp" />
+    <ClCompile Include="Source\core-qt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\cpu.cpp" />
+    <ClCompile Include="Source\cubic.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ClCompile Include="Source\curvequadric2.cpp" />
+    <ClCompile Include="Source\curvequadric2set.cpp" />
+    <ClCompile Include="Source\evector.cpp" />
+    <ClCompile Include="Source\evector2.cpp" />
+    <ClCompile Include="Source\frame.cpp" />
+    <ClCompile Include="Source\framescaled.cpp" />
+    <ClCompile Include="Source\gpu-shader.cpp" />
+    <ClCompile Include="Source\hashtable.cpp" />
+    <ClCompile Include="Source\integerfield2.cpp" />
+    <ClCompile Include="Source\mathematics.cpp" />
+    <ClCompile Include="Source\matrix.cpp">
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <ClCompile Include="Source\matrix2.cpp">
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <ClCompile Include="Source\mesh.cpp" />
+    <ClCompile Include="Source\noise2.cpp" />
+    <ClCompile Include="Source\plane.cpp" />
+    <ClCompile Include="Source\pointcurve2.cpp" />
+    <ClCompile Include="Source\quadric.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ClCompile Include="Source\random-xoshiro.cpp" />
+    <ClCompile Include="Source\random.cpp" />
+    <ClCompile Include="Source\scalarfield2.cpp" />
+    <ClCompile Include="Source\segment.cpp" />
+    <ClCompile Include="Source\segment2.cpp" />
+    <ClCompile Include="Source\shuffle.cpp" />
+    <ClCompile Include="Source\sphere.cpp" />
+    <ClCompile Include="Source\triangle.cpp" />
+    <ClCompile Include="Source\turbulence2.cpp" />
+    <ClCompile Include="Source\vectorfield2.cpp" />
+    <ClCompile Include="Source\vectorset2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\array.h" />
+    <ClInclude Include="Include\arrayinteger.h" />
+    <ClInclude Include="Include\box.h" />
+    <ClInclude Include="Include\camera.h" />
+    <ClInclude Include="Include\circle.h" />
+    <ClInclude Include="Include\color.h" />
+    <ClInclude Include="Include\core-qt.h" />
+    <ClInclude Include="Include\cpu.h" />
+    <ClInclude Include="Include\cubic.h" />
+    <ClInclude Include="Include\curve.h" />
+    <ClInclude Include="Include\curvepoint.h" />
+    <ClInclude Include="Include\curveset.h" />
+    <ClInclude Include="Include\evector.h" />
+    <ClInclude Include="Include\frame.h" />
+    <ClInclude Include="Include\gpu-shader.h" />
+    <ClInclude Include="Include\gpu-wrapper.h" />
+    <ClInclude Include="Include\linear.h" />
+    <ClInclude Include="Include\mathematics.h" />
+    <ClInclude Include="Include\matrix.h" />
+    <ClInclude Include="Include\mesh.h" />
+    <ClInclude Include="Include\noise.h" />
+    <ClInclude Include="Include\plane.h" />
+    <ClInclude Include="Include\quadric.h" />
+    <ClInclude Include="Include\quartic.h" />
+    <ClInclude Include="Include\quintic.h" />
+    <ClInclude Include="Include\random.h" />
+    <ClInclude Include="Include\ray.h" />
+    <ClInclude Include="Include\scalarfield.h" />
+    <ClInclude Include="Include\segment.h" />
+    <ClInclude Include="Include\shuffle.h" />
+    <ClInclude Include="Include\sphere.h" />
+    <ClInclude Include="Include\tetrahedra.h" />
+    <ClInclude Include="Include\triangle.h" />
+    <ClInclude Include="Include\turbulence.h" />
+    <ClInclude Include="Include\vectorfield.h" />
+    <ClInclude Include="Include\vectorset.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

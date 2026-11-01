@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{b42820ba-d9b3-4e44-87ed-0209b6f24dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Moc">
+      <UniqueIdentifier>{8d26d738-9350-4b58-ae42-c5a0ccc81187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source\Maya">
+      <UniqueIdentifier>{e4ccc51d-6b88-4bc0-befb-65100fd3f591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Maya\Maya-Files">
+      <UniqueIdentifier>{1904c717-eb7e-47a4-9877-fb32801251ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Maya\Maya-Geometry">
+      <UniqueIdentifier>{e2e53821-28f1-4d17-b1db-58f8e18fdd80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Maya\Maya-Instances">
+      <UniqueIdentifier>{5fe4a286-6f81-43e6-8ee1-b90329eae5e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Maya\Maya-Objects">
+      <UniqueIdentifier>{0db84066-2955-46e9-acdb-969c3e9d74b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Maya\Maya-Scene">
+      <UniqueIdentifier>{947540bd-e6c4-4914-9d04-8474b6e013d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Maya\Maya-Statistics">
+      <UniqueIdentifier>{36926cf5-2232-4b2d-8f05-2b00181a963e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Maya\Maya-Widget">
+      <UniqueIdentifier>{22de5f09-84a5-49bd-aa83-9645d08b547d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RealTime">
+      <UniqueIdentifier>{adbf5475-57e5-4c54-8498-193b09724f85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\maya-geometry.cpp">
+      <Filter>Source\Maya\Maya-Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-geometryall.cpp">
+      <Filter>Source\Maya\Maya-Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-geometryset.cpp">
+      <Filter>Source\Maya\Maya-Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-glwidget.cpp">
+      <Filter>Source\Maya\Maya-Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-material.cpp">
+      <Filter>Source\Maya\Maya-Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-plane.cpp">
+      <Filter>Source\Maya\Maya-Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-file-export.cpp">
+      <Filter>Source\Maya\Maya-Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-statistics.cpp">
+      <Filter>Source\Maya\Maya-Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-moc.cpp">
+      <Filter>Source\Moc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-widget-initialize.cpp">
+      <Filter>Source\Maya\Maya-Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-instancevbo.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-instancevboall.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-instancevboset.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-renderer.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-shader.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-cameraset.cpp">
+      <Filter>Source\Maya</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\maya-qt.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Include\maya.h">
+      <Filter>Include</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Shaders\default_fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\default_gs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\default_vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\background_fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\background_vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\simple_fs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\simple_vs.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\heightfield_raytrace.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\skybox.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\mesh.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\point.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\mayarender.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mayashader.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mayageometry.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\evectorfloat.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\maya-qt.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

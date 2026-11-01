@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source\HeightField">
+      <UniqueIdentifier>{569a9b09-14be-4f22-84a4-9e1bfaca81b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Layers">
+      <UniqueIdentifier>{d14ca8ef-e8b1-411f-829c-908a86425acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Erosion">
+      <UniqueIdentifier>{9adb415b-f7a4-4467-8192-630e7bcb3e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{ae27df30-8c77-4d48-a132-12c0eddb31d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Erosion GPU">
+      <UniqueIdentifier>{3e504cfc-d4fa-4a34-8bf6-77503de383f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\heightfield.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-fill.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-carve.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-mesh.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-access.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfieldshader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\gputerrainsimuparticle.cpp">
+      <Filter>Source\Erosion GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-flow.cpp">
+      <Filter>Source\HeightField</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\heightfield-qt.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\heightfield.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\heightfieldshader.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gputerrainsimu.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\heightfield-qt.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\heightfield_hydraulic.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\heightfield_hydraulic_particle.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\heightfield_thermal.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\heightfield_analysis.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\heightfield_hydraulic_test.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\map_processing.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\heightfield_thermal_simple.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\map_add.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\ms_spe_gpu.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

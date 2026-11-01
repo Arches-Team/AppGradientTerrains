@@ -1,0 +1,89 @@
+# ----------------------------------------------------------------------------------------------------------------------
+# Generated files only. Everything needed to build (sources, headers, .ui, shaders, icons, the GLEW files of
+# Libs/LibPlatform, the .sln / .vcxproj and CMakeLists.txt) stays tracked.
+# ----------------------------------------------------------------------------------------------------------------------
+
+# ---- Visual Studio build output (the .vcxproj write to Out/ and Temp/) -----------------------------------------------
+Out/
+Temp/
+.vs/
+ipch/
+*.user
+*.suo
+*.aps
+*.ncb
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.vspscc
+*.vssscc
+*.sln.docstates
+*.rsuser
+*.userosscache
+
+# ---- CMake build trees ------------------------------------------------------------------------------------------------
+/build/
+/build-*/
+/out/
+/cmake-build-*/
+CMakeUserPresets.json
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+install_manifest.txt
+*_autogen/
+
+# ---- Files produced by the Qt tools (moc / uic / rcc) ---------------------------------------------------------------
+# regenerated at every build: by the custom build steps of the .vcxproj, or by CMake (AUTOMOC)
+moc_*.cpp
+*-moc.cpp
+uic_*.h
+ui_*.h
+qrc_*.cpp
+.qmake.stash
+*.pro.user
+
+# ---- Compiler and linker output ---------------------------------------------------------------------------------------
+# (no *.lib / *.dll rule: Libs/LibPlatform/LibGL/x64 ships glew32.lib and glew32.dll)
+*.obj
+*.o
+*.a
+*.exe
+*.exp
+*.ilk
+*.idb
+*.pdb
+*.pch
+*.gch
+*.ipch
+*.iobj
+*.ipdb
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.map
+*.rsp
+*.log
+*.stackdump
+.cache/
+
+# ---- Files written by the application when it runs from its source folder ---------------------------------------------
+# images of the FBM terrains and of the tests, and the folders of the "Record Steps" option
+/AppGradientTerrains/hf.png
+/AppGradientTerrains/noise.png
+/AppGradientTerrains/test.png
+/AppGradientTerrains/phi.png
+/AppGradientTerrains/export/
+export/
+
+# ---- Editors and operating systems ------------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

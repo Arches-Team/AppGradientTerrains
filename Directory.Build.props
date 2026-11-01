@@ -1,0 +1,9 @@
+<Project>
+  <!-- Redirige ARCHESLIBDIR vers la copie locale des bibliotheques (Libs\) pour tous les projets
+       de cette solution. Une propriete MSBuild prime sur la variable d'environnement du meme nom. -->
+  <PropertyGroup>
+    <ARCHESLIBDIR>$(MSBuildThisFileDirectory)Libs</ARCHESLIBDIR>
+    <!-- Le projet n'utilise aucune bibliotheque vcpkg : on evite d'ajouter ses dossiers include / lib. -->
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+</Project>

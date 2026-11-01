@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Kernel">
+      <UniqueIdentifier>{46c8930a-9327-46e8-81bb-041f7a53d5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Math">
+      <UniqueIdentifier>{2446cb1c-26ab-41ae-972c-09165259fd74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System">
+      <UniqueIdentifier>{5f7e232d-820d-46d7-a42c-c2595591ca32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source\Kernel\Noise">
+      <UniqueIdentifier>{b87ec909-4078-47f6-9b19-98c53eb45d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Color">
+      <UniqueIdentifier>{af7f39fc-dfc2-413c-809b-66d5dc0c17e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Kernel\Planar">
+      <UniqueIdentifier>{713b6cfc-7930-42cb-a4bb-20505009eda5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Gpu">
+      <UniqueIdentifier>{68547f39-8fa5-4ddd-8795-1684f0fb00ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Polynomials">
+      <UniqueIdentifier>{8e7b0419-d048-4180-8644-c8375a2e85ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rd Party">
+      <UniqueIdentifier>{1ae7714c-468c-4dbb-a3d0-200c27bf1e2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\camera.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\frame.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\hashtable.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\plane.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\segment.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\sphere.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\triangle.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\box.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\cubic.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\evector.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\matrix.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\quadric.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\random.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\mathematics.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\box2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\circle2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\segment2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\curvequadric2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\array2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\matrix2.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\evector2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\curvequadric2set.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\cpu.cpp">
+      <Filter>Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\random-xoshiro.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\vectorset2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\shuffle.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\vectorfield2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\framescaled.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\integerfield2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\color.cpp">
+      <Filter>Source\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\analyticscalarfield2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\scalarfield2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\pointcurve2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\mesh.cpp">
+      <Filter>Source\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\gpu-shader.cpp">
+      <Filter>Source\Gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\core-qt.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\noise2.cpp">
+      <Filter>Source\Kernel\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\turbulence2.cpp">
+      <Filter>Source\Kernel\Planar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\random.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ray.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\segment.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sphere.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\tetrahedra.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\triangle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\box.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\camera.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\circle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\color.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cpu.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\curve.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\curveset.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\evector.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\frame.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\matrix.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\noise.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\plane.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mathematics.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\array.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\vectorset.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\shuffle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\scalarfield.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\vectorfield.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\turbulence.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\arrayinteger.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\curvepoint.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mesh.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gpu-shader.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\core-qt.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gpu-wrapper.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cubic.h">
+      <Filter>Include\Polynomials</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\quadric.h">
+      <Filter>Include\Polynomials</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\quartic.h">
+      <Filter>Include\Polynomials</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\quintic.h">
+      <Filter>Include\Polynomials</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\linear.h">
+      <Filter>Include\Polynomials</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
